@@ -64,7 +64,6 @@ def sendEmail(job):
 	s.quit()
 	#exit() # Added this but not sure if it's needed, probs not
 
-# I dont understand what this (jobs) thing is. Might need u to explain what that's doing
 def saveJobsToDisk(jobs):
 	with open('jobs.hadooken', 'wb') as output:
 		print "start write..."
@@ -104,7 +103,7 @@ jobsFilteredByLocation = []
 # Looks for jobs we've found and added to original array
 for job in jobsArray:
 	for location in locationsArray:
-		# dont understand this line
+
 		found = job.title.find(location)
 
 		if found > 0:
